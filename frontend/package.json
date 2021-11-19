@@ -13,7 +13,7 @@
     "react",
     "tailwindcss"
   ],
-  "author": "Mark Ladyshau <markladyshev@gmail.com>",
+  "author": "csivitu <askcsivit@gmail.com>",
   "scripts": {
     "prepare": "snowpack",
     "start": "snowpack dev",
