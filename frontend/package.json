@@ -18,16 +18,13 @@
     "prepare": "snowpack",
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "jest",
-    "watch": "snowpack build --watch"
+    "test": "jest"
   },
   "dependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^6.0.2",
-    "switch": "^0.0.0",
-    "tailwindcss": "^1.9.6",
-    "postinstall" : "npx snowpack"
+    "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.12.6",
