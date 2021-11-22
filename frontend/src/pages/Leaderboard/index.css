@@ -10,7 +10,7 @@
     color: white;
     font-size: 2rem;
     margin: 1.2rem 0;
-    font-family: General Sans;
+    font-family: 'General Sans', sans-serif;
   }
 
 .leaderboard {
@@ -21,17 +21,21 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 80%;
+    width: 60%;
+    font-family: 'General Sans', sans-serif;
   }
 
 .names {
-    height: 2rem;
+    height: 38px;
+    width: 824px;
     font-weight: 500;
     font-size: 19.4028px;
     /* padding: 10px; */
+    margin: 0px 266.527px;
     border-radius: 5%;
     text-align: center;
     color: #F1BD12;
+    align-items: center;
   }
   
   .names td {

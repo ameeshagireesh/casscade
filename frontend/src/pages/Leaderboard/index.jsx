@@ -10,7 +10,7 @@ const Leaderboard = () => {
           <tr className="heading">
             <th>Rank</th>
             <th>Username</th>
-            <th>Percentage Match</th>
+            <th>Score</th>
           </tr>
           </thead>
 
