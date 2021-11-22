@@ -1,10 +1,37 @@
 .casscade-logo{
+    padding-top: 6%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+}
+
+.casscade-text{
+    padding-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-position{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: #410979;
+    font-family: General Sans, sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 22.9677px;
+    letter-spacing: 0.02em;
+    line-height: 106%;
+    width: 141px;
+    height: 54.7px;
 }
 
 .casscade-bg{
     width: 100%;
+    bottom: 0;
+    position: absolute;
     overflow: hidden;
 }
