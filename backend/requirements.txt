@@ -1,3 +1,5 @@
 imgcompare
 pyppeteer
 python-dotenv
+pymongo
+dnspython

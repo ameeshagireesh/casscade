@@ -3,10 +3,16 @@ from pyppeteer import launch
 import imgcompare
 import os
 from dotenv import load_dotenv
+import pymongo
 
 load_dotenv()
 
+
 absolute_path = os.path.dirname(os.path.abspath(__file__))
+
+myclient = pymongo.MongoClient(os.getenv("MONGO_URL"))
+myDB = myclient[os.getenv("DB")]
+myCol = myDB[os.getenv("COLLECTION")]
 
 async def screenshot(path, name, isRef):
     browser = await launch()
@@ -30,6 +36,8 @@ except OSError as error:
 
 for html_file in os.listdir(submissionDir):
     name, extension = os.path.splitext(html_file)
+    if(name==refHtml.split('.')[0]):
+        continue
     if extension == '.html':
         print(html_file)
         asyncio.get_event_loop().run_until_complete(screenshot(path=os.path.join(submissionDir, html_file), name=name, isRef=False))
@@ -41,5 +49,5 @@ for html_file in os.listdir(submissionDir):
             "name": name,
             "percentage": percentage
         }
-        print(score)
-    
+        x = myCol.insert_one(score)
+        print(x.inserted_id)
