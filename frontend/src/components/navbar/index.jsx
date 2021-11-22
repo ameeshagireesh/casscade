@@ -84,14 +84,6 @@ const Navbar = () => {
                     Rules
                   </Link>
                   <Link
-                    to="/submit"
-                    id="/submit"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Submission
-                  </Link>
-
-                  <Link
                     to="/leaderboard"
                     id="/leaderboard"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -127,12 +119,6 @@ const Navbar = () => {
               Rules
             </Link>
 
-            <Link
-              to="/submit"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >
-              Submit
-            </Link>
           </div>
         </div>
       </nav>
