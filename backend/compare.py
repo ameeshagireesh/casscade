@@ -47,7 +47,7 @@ for html_file in os.listdir(submissionDir):
         print(percentage)
         score = {
             "name": name,
-            "percentage": percentage
+            "score": percentage
         }
         x = myCol.insert_one(score)
         print(x.inserted_id)
