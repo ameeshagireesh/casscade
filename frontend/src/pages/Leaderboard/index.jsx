@@ -20,45 +20,63 @@ const Leaderboard = () => {
               <td>Kadambari03</td>
               <td>3300</td>
             </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
+            <tr className="black-row">
             </tr>
             <tr className="names">
               <td>21</td>
               <td>Kadambari03</td>
               <td>3300</td>
             </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
+            <tr className="black-row">
             </tr>
             <tr className="names">
               <td>21</td>
               <td>Kadambari03</td>
               <td>3300</td>
             </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
+            <tr className="black-row">
             </tr>
             <tr className="names">
               <td>21</td>
               <td>Kadambari03</td>
               <td>3300</td>
             </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
+            <tr className="black-row">
             </tr>
             <tr className="names">
               <td>21</td>
               <td>Kadambari03</td>
               <td>3300</td>
+            </tr>
+            <tr className="black-row">
+            </tr>
+            <tr className="names">
+              <td>21</td>
+              <td>Kadambari03</td>
+              <td>3300</td>
+            </tr>
+            <tr className="black-row">
+            </tr>
+            <tr className="names">
+              <td>21</td>
+              <td>Kadambari03</td>
+              <td>3300</td>
+            </tr>
+            <tr className="black-row">
+            </tr>
+            <tr className="names">
+              <td>21</td>
+              <td>Kadambari03</td>
+              <td>3300</td>
+            </tr>
+            <tr className="black-row">
+            </tr>
+            <tr className="names">
+              <td>21</td>
+              <td>Kadambari03</td>
+              <td>3300</td>
+            </tr>
+            <tr className="black-row">
             </tr>
             <tr className="names">
               <td>21</td>

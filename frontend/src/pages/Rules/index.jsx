@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.css'; 
 import listIcon from '../../assets/listicon.svg';
 
 const Rules = () => {

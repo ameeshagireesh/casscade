@@ -70,7 +70,7 @@ const Navbar = () => {
                   <Link
                     to="/"
                     id="/"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-large"
                     aria-current="page"
                   >
                     About
@@ -79,14 +79,14 @@ const Navbar = () => {
                   <Link
                     to="/rules"
                     id="/rules"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-large"
                   >
                     Rules
                   </Link>
                   <Link
                     to="/leaderboard"
                     id="/leaderboard"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-large"
                   >
                     Leaderboard
                   </Link>
@@ -99,7 +99,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               to="/"
-              className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-large"
               aria-current="page"
             >
              About
@@ -107,14 +107,14 @@ const Navbar = () => {
 
             <Link
               to="/leaderboard"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-large"
             >
               Leaderboard
             </Link>
 
             <Link
               to="/rules"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-large"
             >
               Rules
             </Link>
