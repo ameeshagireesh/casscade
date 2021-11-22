@@ -1,0 +1,2 @@
+imgcompare
+pyppeteer
