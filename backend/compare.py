@@ -2,6 +2,9 @@ import asyncio
 from pyppeteer import launch
 import imgcompare
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 absolute_path = os.path.dirname(os.path.abspath(__file__))
 

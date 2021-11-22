@@ -1,2 +1,3 @@
 imgcompare
 pyppeteer
+python-dotenv
