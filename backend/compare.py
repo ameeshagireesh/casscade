@@ -44,6 +44,16 @@ for html_file in os.listdir(submissionDir):
         print(name)
         img = "images/{}.png".format(name)
         percentage = round((100 - imgcompare.image_diff_percent(comparision_img, img)), 3)
+        f = open(html_file, 'r')
+        data = f.read()
+        c = data.count('<')
+        if(c<20):
+            c=100
+        elif(c>=20 and c<110):
+            c = 100 - c - 20
+        else:
+            c = 10
+        percentage = (0.2*c)+(0.8*percentage)
         print(percentage)
         score = {
             "name": name,
