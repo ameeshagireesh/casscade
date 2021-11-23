@@ -11,9 +11,47 @@ li {
   background: black;
 }
 
+.sub-rules{
+  padding-left: 50px;
+}
+
 .casscade-bg-rules{
   width: 100%;
   bottom: 0;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .rules-container {
+    width: 80vw;
+    padding-top: 70px;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .casscade-bg-rules{
+    width: 150%;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .rules-container {
+    width: 90vw;
+    padding-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .scrolldown {
+    padding-right: 7px;
+  }
+
+  .scrolldown::-webkit-scrollbar {
+    width: 5px;
+  }
+  .casscade-bg-rules{
+    width: 150%;
+  }
 }
