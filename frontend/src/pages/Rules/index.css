@@ -2,10 +2,18 @@ li {
   list-style-image: url("../../assets/listicon.svg");
 }
 
-/* .casscade-bg{
-  width: 80%;
-  padding-top: 20px;
+.rules-container{
+  padding-top: 100px;
+  /* padding-left: 25%;
+  padding-right: 25%; */
+  margin-left: 20%;
+  margin-right: 20%;
+  background: black;
+}
+
+.casscade-bg{
+  width: 100%;
   bottom: 0;
-  position: absolute;
+  position: relative;
   overflow: hidden;
-} */
+}
