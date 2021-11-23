@@ -87,7 +87,7 @@ const Leaderboard = () => {
           </tbody>
         </table>
         <div>
-        <img src={background} className="casscade-bg"/>
+        <img src={background} className="casscade-bg-leaderboard"/>
       </div>
       </div>
     </>

@@ -60,7 +60,7 @@ const Rules = () => {
           </li>
         </ul>
       </p>
-      <img src={background} className="casscade-bg"/>
+      <img src={background} className="casscade-bg-rules"/>
     </div>
   );
 };
