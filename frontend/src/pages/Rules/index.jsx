@@ -1,11 +1,13 @@
 import React from 'react';
 import './index.css'; 
 import listIcon from '../../assets/listicon.svg';
+import background from '../../assets/bg.png';
 
 const Rules = () => {
   return (
-    <div className="container mx-auto my-20 ">
-      <p className="text-white font-semibold text-xl ">
+    // <div className="container mx-auto my-20 ">
+    <div>
+      <p className="rules-container text-white font-semibold text-xl ">
         <ul>
           <li>
             <img src={listIcon} className="inline-block" /> &nbsp;
@@ -58,6 +60,7 @@ const Rules = () => {
           </li>
         </ul>
       </p>
+      <img src={background} className="casscade-bg-rules"/>
     </div>
   );
 };

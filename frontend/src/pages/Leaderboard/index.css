@@ -97,3 +97,10 @@
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
+
+.casscade-bg-leaderboard{
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+}

@@ -15,7 +15,7 @@ const Home = () => {
         </button>
       </div>
       <div>
-        <img src={background} className="casscade-bg"/>
+        <img src={background} className="casscade-bg-home"/>
       </div>
     </div>
   );
