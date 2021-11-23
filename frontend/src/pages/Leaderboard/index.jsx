@@ -12,7 +12,7 @@ const Leaderboard = () => {
 			headers: { "Content-Type": "application/json" },
 		};
 
-		let res = await fetch("http://localhost:3001/leaderboard", requestOptions);
+		let res = await fetch("http://localhost:3000/leaderboard", requestOptions);
 		res = await res.json();
 		setArr(res["submission"]);
 	};
@@ -42,7 +42,7 @@ const Leaderboard = () => {
                 <tr className="names" key={val._id}>
                   <td>{ind+1}</td>
                   <td>{val.name}</td>
-                  <td>{val.score}</td>
+                  <td>{val.score.toFixed(3)}</td>
                 </tr>
                 <tr className="black-row"/>
               </>)
