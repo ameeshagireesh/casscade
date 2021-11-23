@@ -9,11 +9,6 @@ const Home = () => {
     <div className="">
       <img src={casscadelogo} className="casscade-logo"/>
       <img src={casscadetext} className="casscade-text"/>
-      {/* <div className="login-position">
-        <button className="login" >
-          LOG IN
-        </button>
-      </div> */}
       <div>
         <img src={background} className="casscade-bg-home"/>
       </div>

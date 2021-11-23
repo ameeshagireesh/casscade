@@ -12,7 +12,7 @@ const Leaderboard = () => {
 			headers: { "Content-Type": "application/json" },
 		};
 
-		let res = await fetch("http://localhost:3000/leaderboard", requestOptions);
+		let res = await fetch("https://casscade-api.csivit.com/leaderboard", requestOptions);
 		res = await res.json();
 		setArr(res["submission"]);
 	};

@@ -12,24 +12,6 @@
     margin-right: auto;
 }
 
-.login-position{
-    padding-top: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login{
-    background-color: #410979;
-    font-family: General Sans, sans-serif;
-    font-weight: 600;
-    color: #ffff;
-    font-size: 22.9677px;
-    letter-spacing: 0.02em;
-    line-height: 106%;
-    width: 141px;
-    height: 54.7px;
-}
 
 .casscade-bg-home{
     width: 100%;
@@ -37,3 +19,50 @@
     position: absolute;
     overflow: hidden;
 }
+@media screen and (max-width: 930px) {
+    .casscade-logo {
+        padding-top: 30%;
+        width: 85vw;
+    }
+
+    .casscade-text {
+        padding-top: 5%;
+        width: 50vw;
+      }
+
+    .casscade-bg-home{
+        width: 100vw;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+    .casscade-logo {
+        padding-top: 40%;
+        width: 80vw;
+    }
+
+    .casscade-text {
+        padding-top: 5%;
+        width: 45vw;
+      }
+
+    .casscade-bg-home{
+        width: 100vw;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .casscade-logo {
+        padding-top: 40%;
+        width: 85vw;
+    }
+
+    .casscade-text {
+        padding-top: 5%;
+        width: 50vw;
+      }
+
+    .casscade-bg-home{
+        width: 100vw;
+    }
+  }
