@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css'; 
 import listIcon from '../../assets/listicon.svg';
+// import background from '../../assets/bg.png';
 
 const Rules = () => {
   return (
@@ -56,6 +57,9 @@ const Rules = () => {
             Platform: Discord <br />
             </p>
           </li>
+          {/* <li>
+            <img src={background} className="casscade-bg"/>
+          </li> */}
         </ul>
       </p>
     </div>

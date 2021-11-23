@@ -1,5 +1,6 @@
 import React from 'react';
 import "./index.css";
+import background from '../../assets/bg.png';
 
 const Leaderboard = () => {
   return (
@@ -85,6 +86,9 @@ const Leaderboard = () => {
             </tr>
           </tbody>
         </table>
+        <div>
+        <img src={background} className="casscade-bg"/>
+      </div>
       </div>
     </>
   );

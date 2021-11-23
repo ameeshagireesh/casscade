@@ -1,3 +1,11 @@
 li {
   list-style-image: url("../../assets/listicon.svg");
 }
+
+/* .casscade-bg{
+  width: 80%;
+  padding-top: 20px;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+} */
