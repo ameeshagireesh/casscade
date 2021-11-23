@@ -104,3 +104,47 @@
   position: absolute;
   overflow: hidden;
 }
+
+@media screen and (max-width: 650px) {
+  .leaderboard {
+    width: 80vw;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .names {
+    font-size: 1.2rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .leaderboard {
+    width: 90vw;
+  }
+
+  .header {
+    padding-right: 7px;
+  }
+
+  .scrolldown {
+    padding-right: 7px;
+  }
+
+  .scrolldown::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+  }
+
+  .names {
+    font-size: 1rem;
+    height: 1rem;
+  }
+}
