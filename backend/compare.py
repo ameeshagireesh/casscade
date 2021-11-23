@@ -46,11 +46,20 @@ for html_file in os.listdir(submissionDir):
         percentage = round((100 - imgcompare.image_diff_percent(comparision_img, img)), 3)
         f = open(html_file, 'r')
         data = f.read()
-        c = data.count('<')
-        if(c<20):
+        data = data.replace(" ", "")
+        c = len(data)
+        if(c<300):
             c=100
-        elif(c>=20 and c<110):
-            c = 100 - c - 20
+        elif(c>=300 and c<350):
+            c = 85
+        elif(c>=350 and c<400):
+            c = 70
+        elif(c>=400 and c<450):
+            c = 60
+        elif(c>=450 and c<500):
+            c = 50
+        elif(c>=500 and c<550):
+            c = 40
         else:
             c = 10
         percentage = (0.2*c)+(0.8*percentage)
