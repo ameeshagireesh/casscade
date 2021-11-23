@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./index.css";
 import background from '../../assets/bg.png';
 
 const Leaderboard = () => {
+
+  const [arr, setArr] = useState([]);
+
+  const getLeaderboard = async () => {
+		const requestOptions = {
+			method: "GET",
+			headers: { "Content-Type": "application/json" },
+		};
+
+		let res = await fetch("http://localhost:3001/leaderboard", requestOptions);
+		res = await res.json();
+		setArr(res["submission"]);
+	};
+
+  useEffect(() => {
+		getLeaderboard();
+	}, []);
+
+  if(arr.length===0){
+    return (<></>)
+  }
   return (
     <>
       <div className="leaderboard-page">
@@ -16,74 +37,16 @@ const Leaderboard = () => {
           </thead>
 
           <tbody>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
-            <tr className="black-row">
-            </tr>
-            <tr className="names">
-              <td>21</td>
-              <td>Kadambari03</td>
-              <td>3300</td>
-            </tr>
+            {arr.map((val, ind) => {
+              return (<>
+                <tr className="names" key={val._id}>
+                  <td>{ind+1}</td>
+                  <td>{val.name}</td>
+                  <td>{val.score}</td>
+                </tr>
+                <tr className="black-row"/>
+              </>)
+            })}
           </tbody>
         </table>
         <div>
