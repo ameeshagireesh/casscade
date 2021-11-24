@@ -2,7 +2,7 @@ import React from 'react';
 import casscadelogo from '../../assets/CaSScade.png';
 import casscadetext from '../../assets/text.png';
 import background from '../../assets/bg.png';
-import './index.css';
+import './home.css';
 
 const Home = () => {
   return (

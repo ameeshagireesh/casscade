@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'; 
+import './rules.css'; 
 import listIcon from '../../assets/listicon.svg';
 import background from '../../assets/bg.png';
 

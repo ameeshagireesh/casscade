@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "./index.css";
+import "./leaderboard.css";
 import background from '../../assets/bg.png';
 
 const Leaderboard = () => {
