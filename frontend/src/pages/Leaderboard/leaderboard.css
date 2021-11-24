@@ -1,0 +1,154 @@
+.header {
+    padding-right: 15px;
+  }
+
+body{
+    background: black;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    margin: 1.2rem 0;
+    font-family: 'General Sans', sans-serif;
+  }
+
+.leaderboard {
+    height: 100%;
+    width: 70vw;
+    margin: 0 auto;
+    border-spacing: 0 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 60%;
+    font-family: 'General Sans', sans-serif;
+  }
+
+.names {
+    height: 38px;
+    width: 824px;
+    font-weight: 500;
+    font-size: 19.4028px;
+    /* padding: 10px; */
+    margin: 0px 266.527px;
+    border-radius: 5%;
+    text-align: center;
+    color: #F1BD12;
+    align-items: center;
+  }
+  
+  .names td {
+    border: solid 3px var(--leaderboard-bg);
+    border-style: solid none;
+    padding: 10px 5px;
+  }
+  
+  .names td:nth-child(1) {
+    width: 20vw;
+    border-left-style: solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .names td:nth-child(2) {
+    width: 60vw;
+  }
+  
+  .names td:nth-child(3) {
+    width: 20vw;
+    border-right-style: solid;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+.black-row{
+    height: 38px;
+    width: 824px;
+    font-weight: 500;
+    font-size: 19.4028px;
+    /* padding: 10px; */
+    margin: 0px 266.527px;
+    border-radius: 5%;
+    text-align: center;
+    color: black;
+    align-items: center;
+}
+.black-row td {
+  border: solid 3px var(--leaderboard-bg);
+  border-style: solid none;
+  padding: 10px 5px;
+}
+
+.black-row td:nth-child(1) {
+  width: 20vw;
+  border-left-style: solid;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.black-row td:nth-child(2) {
+  width: 60vw;
+}
+
+.black-row td:nth-child(3) {
+  width: 20vw;
+  border-right-style: solid;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.casscade-bg-leaderboard{
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 650px) {
+  .leaderboard {
+    width: 80vw;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .names {
+    font-size: 1.2rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .leaderboard {
+    width: 90vw;
+  }
+
+  .header {
+    padding-right: 7px;
+  }
+
+  .scrolldown {
+    padding-right: 7px;
+  }
+
+  .scrolldown::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+    margin: 0.7rem 0;
+  }
+
+  .names {
+    font-size: 1rem;
+    height: 1rem;
+  }
+}
